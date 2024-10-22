@@ -53,21 +53,21 @@ def simAndCheck(strList, searchVal):
 
     filename = 'lab02.s'
     (labelMap, coreDumpData, returncode, errors, simout, regCheck) = runSim(filename, newLabels, newMainCode, randRegs=['s0'], savedRegs={}, simSteps=maxSteps, lab1Hack=True)
-    #print("Simulation returned %d" %(returncode))   # Print the simulator exit code. 0 should mean OK
-    #print("Stderr:") # The simulator standard error
-    #for line in errors:
+    # print("Simulation returned %d" %(returncode))   # Print the simulator exit code. 0 should mean OK
+    # print("Stderr:") # The simulator standard error
+    # for line in errors:
     #    print(line)
-    #print("stdout:") # The simulator standard output
-    #for line in simout:
+    # print("stdout:") # The simulator standard output
+    # for line in simout:
     #    print(line)
-    #print("Saved regs unexpected results:") # savedRegs={} here, so there is nothing to see.
-    #for line in regCheck:
+    # print("Saved regs unexpected results:") # savedRegs={} here, so there is nothing to see.
+    # for line in regCheck:
     #    print(line)
-    #print("Data labels:")  # The address (hex, decimal) for each data label
-    #for label in labelMap.keys():
+    # print("Data labels:")  # The address (hex, decimal) for each data label
+    # for label in labelMap.keys():
     #    print("%s 0x%x (%d)" %(label, labelMap[label], labelMap[label]))
-    #print("Integer registers at program exit") 
-    #for reg in coreDumpData['registers']['integer'].keys():
+    # print("Integer registers at program exit") 
+    # for reg in coreDumpData['registers']['integer'].keys():
     #    print("x%2s 0x%x (%d)" %(reg, coreDumpData['registers']['integer'][reg], coreDumpData['registers']['integer'][reg]))
 
     # Check the expected results and print any differences
